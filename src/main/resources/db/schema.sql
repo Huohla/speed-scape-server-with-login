@@ -7,13 +7,13 @@ DROP TABLE IF EXISTS game_user;
 
 CREATE TABLE IF NOT EXISTS game_user (
     id uuid primary key,
-    user_name varchar(255) not null,
+    username varchar(255) not null,
     email varchar(320) not null,
     password varchar(255) not null,
     points bigint not null default 0,
     role text not null,
 
-    UNIQUE (user_name),
+    UNIQUE (username),
     UNIQUE (email)
 );
 

@@ -21,6 +21,10 @@ body {
     text-align: center;
 }
 
+.divRegister {
+    top: 17px;
+}
+
 input {
     font-family: "Jersey 10", sans-serif !important;
     padding: 5px 10px !important;
@@ -61,7 +65,7 @@ table a:hover {
     color: #fff !important;
     font-weight: bold !important;
     font-size: 20px !important;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .btn-register:hover {
@@ -83,6 +87,26 @@ table a:hover {
 
 #background-wrap {
     z-index: 1 !important;
+}
+
+.register {
+    text-align: center;
+}
+
+.register a {
+    text-decoration: underline;
+    line-height: 25px;
+}
+
+.control-label, .register, .alert {
+    font-family: "Bungee", sans-serif;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 20px;
+}
+
+.alert {
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {

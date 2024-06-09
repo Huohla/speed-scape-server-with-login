@@ -23,9 +23,9 @@ public class GameUserDetailsService implements UserDetailsService {
 
     private final UserRepository userRepository;
 
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        GameUser user = userRepository.findByUsername(email).orElseThrow(() -> new UsernameNotFoundException(email));
+        GameUser user = userRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException(username));
 
         boolean enabled = true;
         boolean accountNonExpired = true;
@@ -33,7 +33,7 @@ public class GameUserDetailsService implements UserDetailsService {
         boolean accountNonLocked = true;
 
         return new User(
-                user.getEmail(),
+                user.getUsername(),
                 user.getPassword(),
                 enabled,
                 accountNonExpired,

@@ -1,7 +1,9 @@
 -- Insert users
-INSERT INTO game_user (id, user_name, email, password, points, role)
-VALUES ('550e8400-e29b-41d4-a716-446655440000', 'john_doe', 'john@example.com', 'password123', 0, 'USER'),
-       ('550e8400-e29b-41d4-a716-446655440001', 'jane_doe', 'jane@example.com', 'password123', 11230123, 'ADMIN')
+INSERT INTO game_user (id, username, email, password, points, role)
+VALUES
+    ('550e8400-e29b-41d4-a716-446655440002', 'admin', 'correo@correo.es', '1234', 100000, 'USER'),
+    ('550e8400-e29b-41d4-a716-446655440000', 'john_doe', 'john@example.com', 'password123', 0, 'USER'),
+    ('550e8400-e29b-41d4-a716-446655440001', 'jane_doe', 'jane@example.com', 'password123', 11230123, 'ADMIN')
 ON CONFLICT DO NOTHING;
 
 -- Insert categories
