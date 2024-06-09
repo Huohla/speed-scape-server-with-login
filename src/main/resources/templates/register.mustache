@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Regístrate</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="apple-touch-icon" href="/static/assets/img/apple-icon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="/static/assets/img/clownfish.ico">
+
+	<link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/assets/css/templatemo.css">
+	<link rel="stylesheet" href="/static/assets/css/custom.css">
+	<link rel="stylesheet" href="/static/assets/css/bubbles.css">
+	<link rel="stylesheet" href="/static/assets/css/submarine.css">
+	<link rel="stylesheet" href="/static/assets/css/waves.css">
+	<link rel="stylesheet" href="/static/assets/css/login.css">
+
+
+	<!-- Load fonts style after rendering the layout styles -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+	<link rel="stylesheet" href="/static/assets/css/fontawesome.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Jersey+10&display=swap" rel="stylesheet">
+	<!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+
+	<!-- Burbujas -->
+	<div id="background-wrap">
+		<div class="bubble x1"></div>
+		<div class="bubble x2"></div>
+		<div class="bubble x3"></div>
+		<div class="bubble x4"></div>
+		<div class="bubble x5"></div>
+		<div class="bubble x6"></div>
+		<div class="bubble x7"></div>
+		<div class="bubble x8"></div>
+		<div class="bubble x9"></div>
+		<div class="bubble x10"></div>
+	</div>
+
+	<!-- Login -->
+
+	<div class="login">
+
+		<div class="container">
+			<div>
+				<div>
+					<div if=${param.exito}>
+						<div class="alert alert-info">Se ha registrado exitosamente a
+							la aplicación</div>
+					</div>
+
+					<h1>Regístrate</h1>
+					<form action="@{/registro}" method="post" object="${usuario}">
+						<div class="form-group">
+							<label class="control-label" for="nombre">Nombre : </label> <input id="nombre" type="text"
+								class="form-control" field="*{nombre}" required autofocus="autofocus">
+						</div>
+
+						<div class="form-group">
+							<label class="control-label" for="apellido">Apellido : </label> <input id="apellido"
+								class="form-control" field="*{apellido}" required autofocus="autofocus">
+						</div>
+
+						<div class="form-group">
+							<label class="control-label" for="email">Email : </label> <input id="email" type="email"
+								class="form-control" field="*{email}" required autofocus="autofocus">
+						</div>
+
+						<div class="form-group">
+							<label class="control-label" for="password">Password : </label> <input type="password"
+								id="password" class="form-control" field="*{password}" required
+								autofocus="autofocus">
+						</div>
+
+						<div class="form-group button">
+							<button type="submit" class="btn btn-register">Registrar</button>
+							<span>Si estas registrado <a href="@{/login}">inicia sesión aqui</a></span>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SUBMARINE -->
+	<div class="seaContainer">
+		<div class="submarine__container">
+			<div class="light"></div>
+			<div class="submarine__periscope"></div>
+			<div class="submarine__periscope-glass"></div>
+			<div class="submarine__sail">
+				<div class="submarine__sail-shadow dark1">
+				</div>
+				<div class="submarine__sail-shadow light1"></div>
+				<div class="submarine__sail-shadow dark2"></div>
+			</div>
+			<div class="submarine__body">
+				<div class="submarine__window one">
+
+				</div>
+				<div class="submarine__window two">
+
+				</div>
+				<div class="submarine__shadow-dark"></div>
+				<div class="submarine__shadow-light"></div>
+				<div class="submarine__shadow-arcLight"></div>
+			</div>
+			<div class="submarine__propeller">
+				<div class="propeller__perspective">
+					<div class="submarine__propeller-parts darkOne"></div>
+					<div class="submarine__propeller-parts lightOne"></div>
+				</div>
+			</div>
+		</div>
+		<div class="bubbles__container">
+			<span class="bubbles bubble-1"></span>
+			<span class="bubbles bubble-2"></span>
+			<span class="bubbles bubble-3"></span>
+			<span class="bubbles bubble-4"></span>
+		</div>
+		<div class="ground__container">
+			<div class="ground ground1">
+				<span class="up-1"></span>
+				<span class="up-2"></span>
+				<span class="up-3"></span>
+				<span class="up-4"></span>
+				<span class="up-5"></span>
+				<span class="up-6"></span>
+				<span class="up-7"></span>
+				<span class="up-8"></span>
+				<span class="up-9"></span>
+				<span class="up-10"></span>
+			</div>
+			<div class="ground ground2">
+				<span class="up-1"></span>
+				<span class="up-2"></span>
+				<span class="up-3"></span>
+				<span class="up-4"></span>
+				<span class="up-5"></span>
+				<span class="up-6"></span>
+				<span class="up-7"></span>
+				<span class="up-8"></span>
+				<span class="up-9"></span>
+				<span class="up-10"></span>
+				<span class="up-11"></span>
+				<span class="up-12"></span>
+				<span class="up-13"></span>
+				<span class="up-14"></span>
+				<span class="up-15"></span>
+				<span class="up-16"></span>
+				<span class="up-17"></span>
+				<span class="up-18"></span>
+				<span class="up-19"></span>
+				<span class="up-20"></span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start Script -->
+	<script src="/static/assets/js/jquery-1.11.0.min.js"></script>
+	<script src="/static/assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+	<script src="/static/assets/js/templatemo.js"></script>
+	<script src="/static/assets/js/custom.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+	<!-- End Script -->
+</body>
+
+</html>
